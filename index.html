@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-info">
+        <div class="pic-gradient"></div>
+        <div class="today-info">
+          <h2 id="day"></h2>
+          <span id="date"></span>
+          <div>
+            <i class="bx bx-current-location"></i>
+            <span id="city">Brasil, BR</span>
+          </div>
+        </div>
+        <div class="today-weather">
+          <img src="" id="tempIcon" class="bx"></img>          
+          <h1 class="weather-temp" id="temp">0°C</h1>
+          <h3 id="descripition">Sem Informação</h3>
+        </div>
+      </div>
+      <div class="right-info">
+        <div class="day-info">
+          <div>
+            <span class="title">TEMPERATURA MIN</span>
+            <span class="value" id="tempMin">0°C</span>
+          </div>
+
+          <div>
+            <span class="title">UMIDADE</span>
+            <span class="value" id="humiDity">0 %</span>
+          </div>
+
+          <div>
+            <span class="title">VEL. DO VENTO</span>
+            <span class="value" id="windSpeed">0 KM/H</span>
+          </div>
+        </div>
+
+        <ul class="days-list">
+          <li>
+            <i class="bx bx-cloud"></i>
+            <span>Seg</span>
+            <span class="day-temp">25°C</span>
+          </li>
+
+          <li>
+            <i class="bx bx-sun"></i>
+            <span>Ter</span>
+            <span class="day-temp">25°C</span>
+          </li>
+
+          <li>
+            <i class="bx bx-cloud-drizzle"></i>
+            <span>Qua</span>
+            <span class="day-temp">26°C</span>
+          </li>
+
+          <li>
+            <i class="bx bx-cloud-light-rain"></i>
+            <span>Qui</span>
+            <span class="day-temp">20°C</span>
+          </li>
+        </ul>
+
+        <div class="input-search">
+          <input type="text" class="city" placeholder="Digite a Cidade"/>
+          <span id="alert"></span>
+        </div>
+        
+        <div class="btn-container">
+          <button class="loc-button">Pesquisar Cidade</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
